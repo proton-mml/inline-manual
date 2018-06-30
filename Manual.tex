@@ -1,0 +1,71 @@
+\documentclass{book}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{indentfirst}
+\setlength{\voffset}{0pt}
+\usepackage[bottom=2cm,top=2cm,left=2cm,right=2cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+\usepackage{url}
+\setlength{\parskip}{0.5em}
+
+\title{Inline}
+\author{Lucas Seiki Oshiro -- 9298228\\
+  Marcos Vinicius do Carmo Sousa -- 9298274\\
+  Matheus Tavares Bernardino -- 9292987\\}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter{Introdução}
+O sistema InLine se propõe a facilitar o processo de gerenciamento de filas em
+estabelecimentos. Em vez de filas presenciais, geralmente gerenciadas por
+tickets em papel ou pagers vibratórios, o sistema traz filas virtualizadas, onde
+os clientes podem acompanhar sua posição em tempo real sem a necessidade de
+estar fisicamente no estabelecimento desejado.
+
+\section{Funcionalidades e Características Principais}
+O sistema tem por finalidade principal a execução das seguintes funcionalidades
+e características:
+
+\begin{itemize}
+\item Implementação de filas por ‘ordem de chegada’ e por ‘hora marcada’.
+\item Filas por ‘ordem de chegada’ representam as filas tradicionais, onde os
+  usuários entram na última posição e são chamados a partir da primeira. A
+  ordenação da fila, porém, além da ordem de chegada, leva em conta uma
+  combinação de atributos do cliente, de modo a tornar a fila mais inteligente.
+\item Filas de ‘hora marcada’, constituem-se de uma sequência de usuários com
+  ordem pré-agendada para atendimento no estabelecimento (como um agendamento
+  tradicional em um consultório médico, por exemplo). A diferença nesta
+  categoria é que o usuário é atualizado em tempo real sobre seu agendamento. Se
+  o estabelecimento, por alterações no tempo previsto de atendimento dos
+  clientes anteriores, precisar atrasar o agendamento de um usuário (ou existe
+  possibilidade de antecipar), o usuário é notificado.
+\item Promover filas com ‘acesso prioritário’ para idosos com idade superior a
+  60 anos, aposentados, gestantes, pessoas com crianças de colo, deficientes e
+  obesos.
+\item Permitir o ‘acesso premium’ para usuários que desejarem pagar uma taxa
+  mensal ou comprarem créditos. No primeiro caso, os usuários têm ‘acesso
+  premium’ a todas as filas com suporte a premium. No segundo, os usuários podem
+  comprar créditos e gastá-los apenas nas filas com suporte a premium que
+  desejarem (cada crédito dá direito a um acesso a uma fila). Cabe a cada
+  estabelecimento decidir se suas filas terão suporte a ‘acesso premium’ ou não.
+\item Para clientes que chegarem a um estabelecimento sem possuir o app InLine
+  ou acesso à internet, o sistema permitirá sua entrada na fila como um ‘usuário
+  não-cadastrado’. Sua entrada será feita pelo gerente do estabelecimento com o
+  nome do cliente.
+\item Mostrar aos usuários, estabelecimentos próximos a ele e estabelecimentos
+  onde as filas estão pequenas.
+
+\item Cada usuário na fila do tipo ‘ordem de chegada’ tem sua posição GPS
+  monitorada de tempos em tempos, enquanto estiver na fila. Caso sua posição GPS
+  não se aproxime do estabelecimento conforme sua vez for chegando na fila,
+  ocorre uma penalização de posições.
+\end{itemize}
+
+\chapter{Instalação}
+
+\end{document}
