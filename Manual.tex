@@ -79,6 +79,23 @@ do Inline o cliente interage com fila e com os estabelecimentos.
 
 \chapter{Instalação}
 
+Neste há instruções de como instalar o Inline manualmente. Entretanto, é
+possível instalar e excutar automaticamente através do Docker. Para isso, é
+necessário que esteja instalado o \verb|docker| e o \verb|docker-compose|. Para
+executar, é necessário utilizar os seguintes comandos:
+
+\begin{verbatim}
+sudo systemctl start docker # habilita o Docker. Pode variar de acordo com o sistema
+cd inline
+docker-compose up
+\end{verbatim}
+
+A API ficará, então, visível na porta 3300, o PWA na porta 8000, e o sistema web
+na porta 8001.
+
+O Inline também está disponível online: o PWA está em
+\url{http://35.231.149.80:8080/} e a API está em \url{http://35.231.149.80:3300}.
+
 \section{Servidor}
 \subsection{Banco de Dados PostgreSQL}
 
@@ -103,17 +120,17 @@ ser executado no MongoDB popula esse banco de dados com alguns dados iniciais.
 \hline
 Variável & Valor \\
 \hline
-PGHOST & Endereço do banco de dados PostgreSQL \\
+\verb|PGHOST| & Endereço do banco de dados PostgreSQL \\
 \hline
-PHPORT & Porta do banco de dados PostgreSQL \\
+\verb|PHPORT| & Porta do banco de dados PostgreSQL \\
 \hline
-PGUSER & Usuário do banco de dados PostgreSQL \\
+\verb|PGUSER| & Usuário do banco de dados PostgreSQL \\
 \hline
-PGPASSWORD & Senha do banco de dados PostgreSQL \\
+\verb|PGPASSWORD| & Senha do banco de dados PostgreSQL \\
 \hline
-PGDATABSE & Nome do banco de dados PostgreSQL \\
+\verb|PGDATABSE| & Nome do banco de dados PostgreSQL \\
 \hline
-MONGO\_URL & Endereço do bacno de dados MongoDB \\
+\verb|MONGO_URL| & Endereço do bacno de dados MongoDB \\
 \hline
 \end{tabular}
 
