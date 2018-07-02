@@ -21,7 +21,7 @@
 \tableofcontents
 
 \chapter{Introdução}
-O sistema InLine se propõe a facilitar o processo de gerenciamento de filas em
+O sistema Inline se propõe a facilitar o processo de gerenciamento de filas em
 estabelecimentos. Em vez de filas presenciais, geralmente gerenciadas por
 tickets em papel ou pagers vibratórios, o sistema traz filas virtualizadas, onde
 os clientes podem acompanhar sua posição em tempo real sem a necessidade de
@@ -101,9 +101,6 @@ docker-compose up
 A API ficará, então, visível na porta 3300, o PWA na porta 8000, e o sistema web
 na porta 8001.
 
-O Inline também está disponível online: o PWA está em
-\url{http://35.231.149.80:8080/} e a API está em \url{http://35.231.149.80:3300}.
-
 \section{Servidor}
 \subsection{Banco de Dados PostgreSQL}
 
@@ -178,11 +175,14 @@ para utilização do PWA, podendo ser utilizado diretamente pelo navegador, caso
 usuário prefira.
 
 \chapter{Utilização do Site}
+O front em React (dashboard para empresas) funciona como cadastro e visualização
+de estabelecimentos.
+
+Para utilizá-lo, basta logar com uma conta empresarial, exemplo:
+\verb|fanfa@fanfa.com| e senha: \verb|senhateste|, para poder cadastrar
+estabelecimentos para essa empresa.
 
 \chapter{Utilização do PWA}
-
-O PWA do Inline pode ser encontrado em \url{http://35.231.149.80:8080/}. Ao
-entrar nele, é apresentada a tela de \textit{login}. 
 
 \section{Login}
 
